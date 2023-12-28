@@ -1,0 +1,131 @@
+/* Definição de variáveis globais */
+:root {
+    --large-default-padding: 6.5em;   /* Padding padrão para seções grandes */
+    --medium-default-padding: 4em;    /* Padding padrão para seções médias */
+}
+
+/* Estilo base para o corpo da página */
+body {
+    font-family: "Roboto", tahoma, arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal */
+#principal {
+    width: 64em;    /* Largura máxima para o container principal */
+    margin: 1.25em auto;   /* Margens automáticas */
+}
+
+/* Estilos para cabeçalhos */
+h1,
+h2 {
+    font-family: 'Viaoda Libre', cursive;
+    font-weight: normal;
+}
+
+/* Estilos para o cabeçalho superior */
+.header-top {
+    background: #162028;    /* Cor de fundo */
+    display: flex;
+    justify-content: space-between;   /* Alinhamento dos itens do cabeçalho */
+}
+
+/* Estilo do logotipo */
+.logotipo {
+    margin: .5em 0 .5em 8.4375em;    /* Margens do logotipo */
+    color: white;
+}
+
+/* Estilos para navegação */
+.header-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1em 0 0;
+    padding: 1em;
+}
+
+.header-nav a {
+    color: #425564;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: .15em;
+    transition: color .3s linear;    /* Transição suave na mudança de cor */
+}
+
+.header-nav a:hover {
+    color: white;
+}
+
+/* Estilos para a seção de portfólio */
+.portfolio {
+    padding: var(--medium-default-padding) var(--large-default-padding);    /* Padding usando variáveis */
+    text-align: center;
+}
+
+.portfolio h1 {
+    font-size: 2.25em;   /* Tamanho da fonte */
+    color: #252525;
+}
+
+.portfolio p {
+    font-size: 1em;
+    line-height: 2;
+    color: #555;
+}
+
+/* Estilos para a galeria de imagens */
+.gallery {
+    color: #555;
+    padding: 0 var(--large-default-padding) var(--medium-default-padding);   /* Padding usando variáveis */
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-card {
+    text-align: center;
+}
+
+.gallery-title {
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Estilos para a seção "Sobre" */
+.about {
+    background-color: #003d52;    /* Cor de fundo */
+    padding: var(--large-default-padding);   /* Padding usando variáveis */
+    color: white;
+    background-image: url(../imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.about h2 {
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+.about p {
+    line-height: 1.5;
+    width: 70%;
+}
+
+/* Estilos para o rodapé */
+.footer {
+    background: #0b171f;   /* Cor de fundo */
+    padding: 1.8em;
+    font-size: .75em;
+    color: #6f8597;
+    letter-spacing: .3em;
+    text-align: center;
+}
